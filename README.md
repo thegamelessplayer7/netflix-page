@@ -1,0 +1,1 @@
+I am building the Netflix landing page to test my JavaScript, HTML, and CSS skills. 
