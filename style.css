@@ -1,5 +1,6 @@
 :root {
     --primary-color: #e50914;
+    --dark-color: #141414;
 }
 
 * {
@@ -73,7 +74,7 @@ img {
     position: absolute;
     top: 50%;
     right: 0%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
 }
 
 .showcase-content {
@@ -104,6 +105,82 @@ img {
 }
 
 
+/* Tabs */
+
+.tabs {
+    background: var(--dark-color);
+    padding-top: 1rem;
+    boder-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabs p {
+    font-size: 1.2 rem;
+    padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+    padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab-border {
+    border-bottom: var(--primary-color) 4px solid;
+
+}
+
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons */
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+/* Text Styles */
+
+.text-xl {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+.text-lg {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-dark {
+    color: #999;
+}
+
 
 /* Buttons */
 
@@ -116,11 +193,12 @@ img {
     text-align: center;
     border: none;
     cursor: pointer;
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
     outline: none;
     text-decoration: none;
     box-shadow: 0 1px 0 rgba(0,0,0, 0.45);
     border-radius: 2px;
+    
 }
 
 .btn:hover {
